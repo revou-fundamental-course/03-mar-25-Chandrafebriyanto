@@ -22,7 +22,9 @@
 body {
   background-color: var(--bg);
 }
-
+.container{
+  margin:50px 9%; ;
+}
 /* membuat element bacground */
 .circle {
   z-index: -99;
@@ -35,29 +37,65 @@ body {
   top: -150px;
   left: -120px;
 }
-
 /* style untuk element navbar */
 #navbar {
-  margin: 50px 85px;
   display: flex;
   justify-content: space-between;
   align-items: anchor-center;
   font-weight: bold;
+  padding-bottom: 80px;
 }
 #name {
   font-size: 2em;
 }
+.navbar-link{
+  cursor: pointer;
+}
 .navbar-link a {
   padding: 0 10px;
+  font-size: 1em;
+  
 }
 .navbar-link a:hover{
     color: var(--fourth);
     transition: 0.5s;
 }
-.contact a {
+.bt-contact a {
   padding: 5px 25px;
   background-image: linear-gradient(90deg, #e17564 0%, #872341 100%);
   border-radius: 7px;
+}
+/* style untuk element profile */
+#profile{
+  display: flex;
+}
+.box1{
+  position: absolute;
+  rotate: -10deg;
+  width: 270px;
+  height: 270px;
+  background-color: #2F2F2F;
+  border-radius: 33px;
+}
+.box2{
+  position: relative;
+  width: 270px;
+  height: 270px;
+  background-image: url(../img/profile.png) ;
+  border-radius: 33px;
+}
+.picture{
+  padding-right: 10%;
+}
+.tittle{
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.text{
+  font-family: "Arimo";
+  text-align: justify;
 }
 
 
