@@ -1,29 +1,63 @@
 /* import font family */
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 /* color palette */
-:root{
-    --bg: #09122C;
-    --second: #872341;
-    --third: #BE3144;
-    --fourth: #E17564;
+:root {
+  --bg: #09122c;
+  --second: #872341;
+  --third: #be3144;
+  --fourth: #e17564;
 }
 
 /* style untuk seluruh element */
 * {
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    font-family: "JetBrains Mono";
-    color: white;
-  }
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "JetBrains Mono";
+  color: white;
+}
 
-  /*style untuk element body  */
-body{
-    background-color: var(--bg);
+/*style untuk element body  */
+body {
+  background-color: var(--bg);
 }
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: anchor-center;
+
+/* membuat element bacground */
+.circle {
+  z-index: -99;
+  position: absolute;
+  width: 398px;
+  height: 398px;
+  background-color: #872341;
+  border-radius: 50%;
+  filter: blur(50px);
+  top: -150px;
+  left: -120px;
 }
+
+/* style untuk element navbar */
+#navbar {
+  margin: 50px 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: anchor-center;
+  font-weight: bold;
+}
+#name {
+  font-size: 2em;
+}
+.navbar-link a {
+  padding: 0 10px;
+}
+.navbar-link a:hover{
+    color: var(--fourth);
+    transition: 0.5s;
+}
+.contact a {
+  padding: 5px 25px;
+  background-image: linear-gradient(90deg, #e17564 0%, #872341 100%);
+  border-radius: 7px;
+}
+
+

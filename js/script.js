@@ -1,11 +1,11 @@
-// membuat ucapan selamat datang
-let username;
-let login = false
+// // membuat ucapan selamat datang
+// let username;
+// let login = false
 
-while(!login){
-    username = window.prompt("what your name: ")
-    if(username !== null && isNaN(username)){
-        document.getElementById("name").textContent = "Hi, " + username;
-        login = true;
-    }
-}
+// while(!login){
+//     username = window.prompt("what your name: ")
+//     if(username !== null && isNaN(username)){
+//         document.getElementById("name").textContent = "Hi," + username;
+//         login = true;
+//     }
+// }
