@@ -22,3 +22,8 @@
 body{
     background-color: var(--bg);
 }
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: anchor-center;
+}
