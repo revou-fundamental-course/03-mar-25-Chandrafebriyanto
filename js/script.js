@@ -1,12 +1,11 @@
 // membuat ucapan selamat datang
-let username = window.prompt("what your name: ")
-// let login = true
-while(login){
-    if(username !== null){
+let username;
+let login = false
+
+while(!login){
+    username = window.prompt("what your name: ")
+    if(username !== null && isNaN(username)){
         document.getElementById("name").textContent = "Hi, " + username;
-        login = false;
-    }
-    else{
-        window.prompt("what your name: ")
+        login = true;
     }
 }
