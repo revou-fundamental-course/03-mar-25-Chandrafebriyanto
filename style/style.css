@@ -22,8 +22,8 @@
 body {
   background-color: var(--bg);
 }
-.container{
-  margin:50px 9%; ;
+.container {
+  margin: 50px 9%;
 }
 
 /* membuat element bacground */
@@ -41,27 +41,26 @@ body {
 /* style untuk element navbar */
 #navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: anchor-center;
   font-weight: bold;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 #name {
   font-size: 2em;
 }
-.navbar-link{
+.navbar-link {
   cursor: pointer;
 }
 .navbar-link a {
   padding: 0 10px;
   font-size: 1em;
   transition: 0.5s;
-  
 }
-.navbar-link a:hover{
-    color: var(--fourth);
-    scale: 110%;
-    
+.navbar-link a:hover {
+  color: var(--fourth);
+  scale: 110%;
 }
 .bt-contact a {
   padding: 5px 25px;
@@ -70,77 +69,155 @@ body {
 }
 
 /* style untuk element profile */
-#profile{
+#profile {
   display: flex;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   align-items: center;
 }
-.box1{
+.box1 {
   position: absolute;
   rotate: -10deg;
   width: 270px;
   height: 270px;
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
   border-radius: 33px;
 }
-.box2{
+.box2 {
   position: relative;
   width: 270px;
   height: 270px;
-  background-image: url(../img/profile.png) ;
+  background-image: url(../img/profile.png);
+  background-size: cover;
   border-radius: 33px;
 }
-.picture{
+.picture {
   padding-right: 10%;
 }
-.tittle{
+.tittle {
   font-weight: bolder;
   font-size: 1.5em;
   margin: 0;
 }
 
-.text{
+.text {
   font-family: "Arimo";
   text-align: justify;
 }
 
 /* style untuk element toolsSkill */
-#toolsSkill h1{
+#toolsSkill h1 {
   font-size: 2em;
   font-weight: bolder;
   justify-self: center;
   margin: 10px 0 10px 0;
 }
-.box-icon-tools{
-  display: flexbox;
-  max-width: 50%;
+.box-icon-tools {
+  display: flex;
+  max-width: 350px;
+  flex-wrap: wrap;
   justify-self: center;
+  justify-content: center;
   padding: 5px 20px;
   background-color: var(--fourth);
   border-radius: 10px;
 }
-.box-icon-tools img{
+.box-icon-tools img {
   height: 50px;
   align-items: center;
-  margin: 2px 5px;
+  margin: 5px 5px;
   transition: 0.2s;
+  align-content: center;
+  cursor: default;
 }
-.box-icon-tools img:hover{
+.box-icon-tools img:hover {
   scale: 110%;
-  filter: drop-shadow(1px 2px 7px black);
 }
 /* style untuk element box-icon-skill */
-.box-icon-skill{
+.box-icon-skill {
+  display: flex;
+  flex-wrap: wrap;
   justify-self: center;
-  width: 75%;
-  background-color: var(--third);
-  border-radius: 17px;
-  padding: 5px 20px;
+  justify-content: center;
+  max-width: 730px;
+  padding: 10px 10px;
+  background-color: #be3144;
+  border-radius: 10px;
 }
-.box-icon-skill p{
+.box-icon-skill p {
   font-weight: bolder;
   padding: 5px 20px;
-  width: fit-content;
-  border-radius:4px;
+  border-radius: 4px;
+  margin: 5px 5px;
+  align-content: center;
+  transition: 0.2s;
+  cursor: default;
+}
+.box-icon-skill p:hover{
+  scale: 110%;
+} 
+
+
+
+
+
+
+/* responsive style */
+/* tampilan tablet */
+@media (max-width: 810px) {
+  .container {
+    margin: 25px 5%;
+  }
+  .circle{
+    width: 300px;
+  height: 300px;
+  }
+  html {
+    font-size: 75%;
+  }
+  #profile {
+    display: inline;
+  }
+  .picture {
+    justify-self: center;
+    margin-bottom: 36px;
+  }
+  .box-icon-tools img{
+    height: 40px;
+  }
+  .box-icon-tools{
+    padding: 3px 10px;
+  }
+  .box-icon-skill{
+    max-width: 500px;
+  }
+  .box-icon-skill p{
+    padding: 5px 10px;
+  }
 }
 
+/* tampilan mobile */
+@media (max-width: 700px) {
+  html {
+    font-size: 65%;
+  }
+  #navbar{
+    padding-bottom: 40px;
+  }
+  .bt-contact a{
+    padding: 5px 10px;
+  }
+  .box1{
+    height: 200px;
+    width: 200px;
+  }
+  .box2{
+    height: 200px;
+    width: 200px;
+  }
+  .navbar-link {
+    display: none;
+  }
+  .box-icon-tools img{
+    height: 30px;
+  }
+}
