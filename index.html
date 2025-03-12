@@ -20,6 +20,9 @@
       <!-- tittle: membuat element background -->
       <div class="background-element">
         <div class="circle"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <!-- <div class="circle3"></div> -->
       </div>
 
       <!-- tittle: menambahkan navbar -->
@@ -36,7 +39,7 @@
         </div>
 
         <div class="bt-contact">
-          <a href="https://wa.me/+6285161236246">Contact</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
 
@@ -96,7 +99,7 @@
           <div class="box-icon-skill">
             <p style="background-color: #f7df1e">JavaScript</p>
             <p style="background-color: #e34f26">HTML5</p>
-            <p style="background-color: #8511fa">Bootstrap</p>
+            <!-- <p style="background-color: #8511fa">Bootstrap</p> -->
             <p style="background-color: #3670a0">Python</p>
             <p style="background-color: #4479a1">MySQL</p>
             <p style="background-color: #121011">Github</p>
@@ -150,10 +153,10 @@
         <div class="container-message">
           <div id="input-message">
             <form action="">
-              <label for="name">Name :</label>
+              <label for="name">Name</label>
               <input type="text" id="name" name="name" />
 
-              <label for="date">Date :</label>
+              <label for="date">Date</label>
               <input type="date" id="date" name="date" />
 
               <label>Gender</label>
@@ -170,19 +173,41 @@
                 name="message"
                 placeholder="Message"
               ></textarea>
-
               <button class="submit">Submit</button>
             </form>
           </div>
 
-          <div class="output-message">
-
+          <div id="output-message">
+            <p>Name:</p>
+            <p>Date:</p>
+            <p>Gender:</p>
+            <p>Message:</p>
           </div>
         </div>
       </section>
+      <hr />
 
-      <!-- menambahkan footer -->
-      <footer id="contact"></footer>
+      <!-- tittle:menambahkan footer -->
+      <footer id="contact">
+        <h1 id="thanks">Thank You, Name</h1>
+        <div class="navbar-link">
+          <a href="#profile">Profile</a>
+          <a href="#toolsSkill">Tools&Skill</a>
+          <a href="#galery">Galery</a>
+          <a href="#message">Message</a>
+        </div>
+        <div class="icon">
+          <div class="box">
+            <a href="https://github.com/Chandrafebriyanto"><img src="img/github.png" alt=""></a>
+          </div>
+          <div class="box">
+            <a href="https://wa.me/+6285161236246"><img src="img/whatsapp.png" alt="" /></a>
+          </div>
+          <div class="box">
+            <a href="https://www.instagram.com/_chandrafebriyanto/"><img src="img/instagram.png" alt="" /></a>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="js/script.js"></script>

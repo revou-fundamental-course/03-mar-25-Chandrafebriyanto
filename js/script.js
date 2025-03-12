@@ -5,7 +5,8 @@
 // while(!login){
 //     username = window.prompt("what your name: ")
 //     if(username !== null && isNaN(username)){
-//         document.getElementById("name").textContent = "Hi," + username;
+//         document.getElementById("username").textContent = "Hi," + username;
+//         document.getElementById("thanks").textContent = "Thank You," + username;
 //         login = true;
 //     }
 // }
