@@ -1,7 +1,7 @@
-/* import font family */
+/* tittle: import font family */
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
-/* color palette */
+/* tittle: color palette */
 :root {
   --bg: #09122c;
   --second: #872341;
@@ -9,7 +9,7 @@
   --fourth: #e17564;
 }
 
-/* style untuk seluruh element */
+/* tittle: style untuk seluruh element */
 * {
   box-sizing: border-box;
   outline: none;
@@ -18,22 +18,22 @@
   color: white;
 }
 
-/* style smooth scroll */
+/* tittle: style smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/*style untuk element body  */
+/* tittle: style untuk element body  */
 body {
   background-color: var(--bg);
 }
 
-/* style element container */
+/* tittle: style element container */
 .container {
   margin: 50px 9%;
 }
 
-/* membuat element bacground */
+/* tittle: membuat element bacground */
 .circle {
   z-index: -99;
   position: absolute;
@@ -81,7 +81,7 @@ body {
   left: 45%;
 }
 
-/* style untuk element navbar */
+/* tittle: style untuk element navbar */
 #navbar {
   display: flex;
   flex-wrap: wrap;
@@ -115,7 +115,7 @@ body {
   transform: scale(1.05);
 }
 
-/* style untuk element profile */
+/* tittle: style untuk element profile */
 #profile {
   display: flex;
   padding-bottom: 50px;
@@ -150,7 +150,7 @@ body {
   text-align: justify;
 }
 
-/* style untuk element toolsSkill */
+/* tittle: style untuk element toolsSkill */
 #toolsSkill {
   margin-bottom: 50px;
 }
@@ -181,7 +181,7 @@ h1 {
 .box-icon-tools img:hover {
   transform: scale(1.05);
 }
-/* style untuk element box-icon-skill */
+/* tittle: style untuk element box-icon-skill */
 .box-icon-skill {
   display: flex;
   flex-wrap: wrap;
@@ -205,7 +205,7 @@ h1 {
   transform: scale(1.05);
 }
 
-/* style untuk element galery */
+/* tittle: style untuk element galery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -214,7 +214,6 @@ h1 {
   margin: auto;
   margin-bottom: 50px;
 }
-
 .gallery img {
   width: 100%;
   max-height: 212px;
@@ -232,7 +231,7 @@ h1 {
   transform: scale(1.05);
 }
 
-/* style message */
+/* tittle: style message */
 .container-message {
   display: flex;
   gap: 20px;
@@ -315,8 +314,9 @@ footer .navbar-link {
   margin: 5px;
 }
 
-/* responsive style */
-/* tampilan tablet */
+
+/* tittle: responsive style */
+/* tittle: tampilan tablet */
 @media (max-width: 810px) {
   .container {
     margin: 25px 5%;
@@ -352,7 +352,7 @@ footer .navbar-link {
   }
 }
 
-/* tampilan mobile */
+/* tittle: tampilan mobile */
 @media (max-width: 700px) {
   html {
     font-size: 65%;

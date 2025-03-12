@@ -1,4 +1,4 @@
-// // membuat ucapan selamat datang
+// // tittle: membuat ucapan selamat datang
 // let username;
 // let login = false
 
@@ -11,7 +11,7 @@
 //     }
 // }
 
-//fungsi message
+// tittle: membuat fungsi message
 let username;
 let date;
 let men;
@@ -32,7 +32,7 @@ document.getElementById("submit").onclick = function () {
     (!men.checked && !women.checked)
   ) {
     window.alert("Error: Semua input harus diisi!");
-    return; // Hentikan eksekusi lebih lanjut
+    return;
   }
 
   else{
