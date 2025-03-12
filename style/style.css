@@ -18,10 +18,17 @@
   color: white;
 }
 
+/* style smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /*style untuk element body  */
 body {
   background-color: var(--bg);
 }
+
+/* style element container */
 .container {
   margin: 50px 9%;
 }
@@ -38,6 +45,7 @@ body {
   top: -150px;
   left: -120px;
 }
+
 /* style untuk element navbar */
 #navbar {
   display: flex;
@@ -62,10 +70,14 @@ body {
   color: var(--fourth);
   scale: 110%;
 }
-.bt-contact a {
+.bt-contact{
   padding: 5px 25px;
   background-image: linear-gradient(90deg, #e17564 0%, #872341 100%);
   border-radius: 7px;
+  transition: 0.4s;
+}
+.bt-contact:hover{
+  scale: 110%;
 }
 
 /* style untuk element profile */
@@ -98,14 +110,13 @@ body {
   font-size: 1.5em;
   margin: 0;
 }
-
 .text {
   font-family: "Arimo";
   text-align: justify;
 }
 
 /* style untuk element toolsSkill */
-#toolsSkill h1 {
+h1 {
   font-size: 2em;
   font-weight: bolder;
   justify-self: center;
@@ -142,6 +153,7 @@ body {
   padding: 10px 10px;
   background-color: #be3144;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
 .box-icon-skill p {
   font-weight: bolder;
@@ -156,7 +168,63 @@ body {
   scale: 110%;
 } 
 
-
+/* style untuk element galery */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+} 
+.box-galery{
+  background-color: var(--fourth);
+  border-radius: 5px;
+  text-align: center;
+  place-content: center;
+}
+#div1 {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+}
+#div2 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+}
+#div3 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 6;
+}
+#div4 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-row-start: 3;
+}
+#div5 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+#div6 {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+#div7 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 6;
+  grid-row-start: 3;
+}
+#div8 {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  grid-row-start: 5;
+}
+      
 
 
 
