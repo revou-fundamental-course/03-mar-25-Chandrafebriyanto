@@ -27,6 +27,10 @@ html {
 body {
   background-color: var(--bg);
 }
+/* tittle: menyembunyikan scroll bar website */
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* tittle: style element container */
 .container {
