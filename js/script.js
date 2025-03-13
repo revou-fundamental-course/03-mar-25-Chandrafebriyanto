@@ -1,15 +1,15 @@
-// // tittle: membuat ucapan selamat datang
-// let username;
-// let login = false
+// tittle: membuat ucapan selamat datang
+let username1;
+let login = false
 
-// while(!login){
-//     username = window.prompt("what your name: ")
-//     if(username !== null && isNaN(username)){
-//         document.getElementById("username").textContent = "Hi," + username;
-//         document.getElementById("thanks").textContent = "Thank You," + username;
-//         login = true;
-//     }
-// }
+while(!login){
+    username1 = window.prompt("what your name: ")
+    if(username1 !== null && isNaN(username1)){
+        document.getElementById("username").textContent = "Hi," + username1;
+        document.getElementById("thanks").textContent = "Thank You," + username1;
+        login = true;
+    }
+}
 
 // tittle: membuat fungsi message
 let username;
